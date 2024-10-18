@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashton's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Ashton's Survey Form</h1>
+<p id="description">Thank you for taking the time to fill out my first form!</p>
+<form id="survey-form">
+    <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+    <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+    <label for="number" id="number-label">Age (optional)<input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+    <label>Which country would you like to travel to?
+        <select id="dropdown">
+            <option>Select a country</option>
+            <option value="">Japan</option>
+            <option value="1">France</option>
+            <option value="2">Canada</option>
+            <option value="3">Spain</option>
+            <option value="4">United States</option>
+        </select>
+    </label>
+    <label>How would you rate your life today?
+        <label><input class="inline" type="radio" name="rate-life" value="0" checked />Great :)</label>
+        <label><input class="inline" type="radio" name="rate-life" value="1" />Okay :/</label>
+        <label><input class="inline" type="radio" name="rate-life" value="2" />Not great :(</label>
+    </label>
+    <label>Which adjective(s) describe you best? (Check all that apply)
+        <label><input class="inline" type="checkbox" value="calm" />Calm</label>
+        <label><input class="inline" type="checkbox" value="ambitious" />Ambitious</label>
+        <label><input class="inline" type="checkbox" value="strict" />Strict</label>
+        <label><input class="inline" type="checkbox" value="anxious" />Anxious</label>
+    </label>
+    <label for="learn-something">What did you learn about yourself while taking this quiz?
+        <textarea id="learn-something" name="learn-something" rows="2" cols="50" placeholder="I learned..."></textarea>
+    </label>
+    <input id="submit" type="submit" value="Submit" />
+</form>
+</body>
+</html>
+
+
+<!-- This is how you comment in html -->
